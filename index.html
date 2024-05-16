@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="TextByte" href="images.jpeg">
+    <link rel="stylesheet" href="input.css">
+    <title>TextByte</title>
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-blue-700 text-white flex justify-between py-3 px-4">
+        <span class="font-sans font-bold text-lg">TextByte</span>
+        <ul class="flex space-x-14 justify-end">
+            <li class="cursor-pointer"><a class="focus:text-gray-300" href="index.html">Home</a></li>
+            <li class="cursor-pointer pr-7"><a class="focus:text-gray-300" href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <p class="text-2xl mx-6 mt-8 text-blue-700 font-bold">Text Encoder : </p>
+    <div class="flex mt-5 justify-center  text-black font-bold">
+        <div class="w-[48vw] h-11 rounded px-4 py-3 bg-white  mr-1">
+            Original Text
+        </div>
+        <div class="w-[48vw] h-11 rounded px-4 py-3 bg-white">
+            Result
+        </div>
+    </div>
+    <div class="flex pt-1 justify-center ">
+        <div >
+            <textarea  class="t11 w-[48vw] h-64 rounded px-4 py-3 mr-1 focus:outline-none focus:border-2 focus:border-blue-200 resize-none" name="" id="" placeholder="Enter text here"></textarea>
+        </div>
+        <div>
+            <textarea class="t12 w-[48vw] h-64 rounded px-4 py-3 focus:outline-none focus:border-2 focus:border-blue-200 resize-none" name="" id="" placeholder="Encoded Text"></textarea>
+        </div>
+    </div>
+    <div class="flex  justify-center  text-black ">
+        <div class="w-[48vw] h-11 rounded px-4 py-3 bg-white  mr-1">
+            Original Size : <span id="org1"></span> 
+        </div>
+        <div class="w-[48vw] h-11 rounded px-4 py-3 bg-white">
+            Compressed Size : <span id="comp1"></span>
+        </div>
+    </div>
+    <div>
+        <button type="button" id="Encode" class="bg-blue-700 text-white rounded px-4 py-2 ml-[674px] mt-4 font-mono hover:bg-blue-600 active:bg-blue-700">Encode</button>
+        <button type="button" id="clear1" class="bg-white text-blue-700 border-2 border-blue-700 hover:bg-blue-700 hover:text-white hover:border-2 hover:border-white active:bg-blue-600 rounded px-4 py-2 font-mono">Clear</button>
+    </div>
+    <div class="bg-white mt-8 m-5 rounded px-3 py-3 text-black" style="overflow-wrap: break-word;">
+        Previous Encoded Text : 
+        <ol id="prev" class="list-decimal ml-4">
+            
+        </ol>
+    </div>
+    <button type="button" id="clear2" class="bg-white text-blue-700 border-2 border-blue-700 hover:bg-blue-700 hover:text-white hover:border-2 hover:border-white active:bg-blue-600 rounded px-4 py-2 font-mono ml-[762px]">Clear</button>
+
+
+
+    <p class="text-2xl mx-6 mt-10 text-blue-700 font-bold">Text Decoder : </p>
+
+    <div class="flex mt-7 justify-center  text-black font-bold">
+        <div class="w-[48vw] h-11 rounded px-4 py-3 bg-white  mr-1">
+            Encoded Text
+        </div>
+        <div class="w-[48vw] h-11 rounded px-4 py-3 bg-white">
+            Original Text
+        </div>
+    </div>
+    <div class="flex pt-1 justify-center ">
+        <div >
+            <textarea id="t21" class="w-[48vw] h-64 rounded px-4 py-3 mr-1 focus:outline-none focus:border-2 focus:border-blue-200 resize-none" name="" id="" placeholder="Enter text here"></textarea>
+        </div>
+        <div>
+            <textarea id="t22" class="w-[48vw] h-64 rounded px-4 py-3 focus:outline-none focus:border-2 focus:border-blue-200 resize-none" name="" id="" placeholder="Decoded Text"></textarea>
+        </div>
+    </div>
+    <div class="flex  justify-center  text-black ">
+        <div  class="w-[48vw] h-11 rounded px-4 py-3 bg-white  mr-1">
+            Compressed Size : <span id="comp2"></span> 
+        </div>
+        <div class="w-[48vw] h-11 rounded px-4 py-3 bg-white">
+            Original Size: <span id="org2"></span>
+        </div>
+    </div>
+    <div>
+        <button id="decode" type="button" class="bg-blue-700 text-white rounded px-4 py-2 ml-[674px] mt-3 mb-28 font-mono hover:bg-blue-600 active:bg-blue-700">Decode</button>
+        <button id="clear3" type="button" class="bg-white text-blue-700 border-2 border-blue-700 hover:bg-blue-700 hover:text-white hover:border-2 hover:border-white active:bg-blue-600 rounded px-4 py-2 font-mono">Clear</button>
+    </div>
+</body> 
+<script src="huffman.js"></script>
+</html>

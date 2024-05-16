@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="TextByte" href="images.jpeg">
+    <link rel="stylesheet" href="input.css">
+    <title>TextByte</title>
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-blue-700 text-white flex justify-between py-3 px-4">
+        <span class="font-sans font-bold text-lg">TextByte</span>
+        <ul class="flex space-x-14 justify-end">
+            <li class="cursor-pointer"><a class="focus:text-gray-300" href="index.html">Home</a></li>
+            <li class="cursor-pointer pr-7"><a class="focus:text-gray-300" href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <div class="bg-gray-100 py-12">
+        <div class="container mx-auto px-4">
+           <h2 class="text-3xl font-bold mb-12 text-blue-700">TextByte uses the Huffman coding algorithm for encoding and decoding text</h2>
+           <h2 class="text-3xl font-bold mb-8">About Huffman Coding</h2>
+      
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">What is Huffman Coding?</h3>
+                    <p class="text-lg text-gray-800 mb-6">Huffman coding is a method used for lossless data compression. It was developed by David A. Huffman while he was a Sc.D. student at MIT, and it is widely used in applications such as file compression and data transmission.</p>
+                    <p class="text-lg text-gray-800 mb-6">The main idea behind Huffman coding is to assign shorter codes to more frequent symbols and longer codes to less frequent symbols, thereby reducing the overall amount of data needed to represent the source.</p>
+                </div>
+      
+                <div>
+                    <h3 class="text-xl font-bold mb-4">How does Huffman Coding work?</h3>
+                    <p class="text-lg text-gray-800 mb-6">Huffman coding works by constructing a binary tree called a Huffman tree. The tree is constructed recursively from the bottom up, starting with individual symbols as leaves and combining them into larger and larger subtrees until a single root node is formed.</p>
+                    <p class="text-lg text-gray-800 mb-6">Once the Huffman tree is constructed, each symbol is assigned a unique binary code by traversing the tree from the root to the leaf corresponding to that symbol. The resulting binary codes are then used to encode the source data.</p>
+                </div>
+            </div>
+      
+            <div class="mt-8">
+                <h3 class="text-xl font-bold mb-4">Applications of Huffman Coding</h3>
+                <p class="text-lg text-gray-800 mb-6">Huffman coding is used in various applications where data compression is required, including:</p>
+                <ul class="list-disc pl-6">
+                    <li class="text-lg text-gray-800 mb-2">File compression (e.g., ZIP files)</li>
+                    <li class="text-lg text-gray-800 mb-2">Image compression (e.g., JPEG)</li>
+                    <li class="text-lg text-gray-800 mb-2">Text compression (e.g., in communication protocols)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
